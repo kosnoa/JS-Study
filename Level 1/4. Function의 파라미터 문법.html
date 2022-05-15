@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.css" </head>
+
+    <body>
+
+        <div class="alert-box" id="alert">Alert Box <button onclick="alertStatus('none')"> Close</button> </div>
+        <button onclick="alertStatus('block')">Button</button>
+
+        <script>
+            // function alertStatus() {
+            //     var x = document.getElementById("alert");
+            //     if (x.style.display == "none") {
+            //         x.style.display = "block";
+            //     } else {
+            //         x.style.display = "none";
+            //     }
+            // }   
+
+
+            // function 알림창열기(구멍) {
+            //     document.getElementById('alert2').style.display = 구멍;
+            // }
+
+
+            // 알림창열기('안녕'); 구멍에 '안녕' 넣어서 알림창열기 안의 코드 실행해주셈.\
+            // 알림창열기(123); 구멍에 123 넣어서 알림창열기 안의 코드 실행해주셈.
+
+            function alertStatus(status) {
+                document.getElementById('alert').style.display = status;
+            }
+
+            // 파라미터는 여러개 넣을 수 있음
+        </script>
+
+
+    </body>
+
+</html>

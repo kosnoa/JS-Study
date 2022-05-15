@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.css" </head>
+
+    <body>
+
+        <div class="alert-box" id="alert">
+            <p id="text">This is an alert box</p>
+            <button onclick="alertStatus('none')">Close</button>
+        </div>
+        <button onclick="alertStatus('block', 1)">Button1</button>
+        <button onclick="alertStatus('block', 2)">Button2</button>
+
+        <script>
+            function alertStatus(status, n) {
+                var x = n;
+                if (n = 1) {
+                    document.getElementById('alert').style.display = status;
+                    document.getElementById('text').innerHTML = 'ID: ';
+                } else if (n = 2) {
+                    document.getElementById('alert').style.display = status;
+                    document.getElementById('text').innerHTML = 'PW: ';
+                } else {
+                    document.getElementById('alert').style.display = status;
+                }
+            }
+        </script>
+
+
+    </body>
+
+</html>

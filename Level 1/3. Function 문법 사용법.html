@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.css" </head>
+
+    <body>
+
+        <div class="alert-box" id="alert">Alert Box <button onclick="alertStatus()"> Close</button> </div>
+        <button onclick="alertStatus()">Button</button>
+
+        <script>
+            function alertStatus() {
+                var x = document.getElementById("alert");
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </body>
+
+</html>
