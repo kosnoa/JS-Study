@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="alert-box" id="alert">
+        <p id="text">This is an alert box</p>
+        <button id="close">Close</button>
+    </div>
+
+    <button id="b1">Button1</button>
+    <button id="b2">Button2</button>
+
+    <script>
+        document.getElementById("close").addEventListener("click", function() {
+            document.getElementById("alert").style.display = "none";
+        });
+
+        // addEventListener("click", function(){}); 이벤트를 해당 요소에 바인딩하는 함수를 실행하는 것이다.
+        // 안에 있는 function 함수는 call-back 함수이다
+
+        document.getElementById("b1").addEventListener("click", function() {
+            document.getElementById("alert").style.display = "block";
+            document.getElementById("text").innerHTML = "Button1 is clicked";
+        });
+
+        document.getElementById("b2").addEventListener("click", function() {
+            document.getElementById("alert").style.display = "block";
+            document.getElementById("text").innerHTML = "Button2 is clicked";
+        });
+    </script>
+
+
+</body>
+
+</html>
