@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="8.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <div class="black-bg">
+        <div class="white-bg">
+            <h4>로그인하세요</h4>
+            <button class="btn btn-danger" id="close">닫기</button>
+        </div>
+    </div>
+
+    <button id="login">로그인</button>
+
+    <script>
+        $('#login').click(function() {
+            $('.black-bg').addClass('show-modal');
+        });
+
+        $(document).ready(function() {
+            $("#close").click(function() {
+                $(".black-bg").removeClass('show-modal');
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
