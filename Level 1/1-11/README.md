@@ -1,0 +1,1 @@
+input, change 이벤트와 and, or 연산자
