@@ -1,2 +1,1 @@
-# JS Study
- 
+# My JavaScript Study Progress 
